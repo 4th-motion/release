@@ -38,5 +38,9 @@
   },
   "engines": {
     "node": ">= 6"
+  },
+  "dependencies": {
+    "args": "^5.0.1",
+    "chalk": "^4.1.0"
   }
 }
