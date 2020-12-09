@@ -1,0 +1,33 @@
+{
+  "name": "@4th-motion/release",
+  "description": "Bump a new version and update your changelogs with a single command.",
+  "version": "0.0.1",
+  "author": "Marco Koenen <mako@4thmotion.com>",
+  "license": "MIT",
+  "repository": {
+    "url": "git://github.com/4th-motion/release.git",
+    "type": "git"
+  },
+  "keywords": [
+    "release",
+    "changelog",
+    "github",
+    "cli",
+    "tags"
+  ],
+  "bin": {
+    "release": "./bin/release.js"
+  },
+  "scripts": {
+    "fresh": "rm -rf node_modules; yarn install",
+    "lint:js": "4th-eslint ./**/*.js --color --fix --quiet"
+  },
+  "devDependencies": {
+    "@4th-motion/eslint-config": "^1.0.4"
+  },
+  "eslintConfig": {
+    "extends": [
+      "@4th-motion/eslint-config"
+    ]
+  }
+}
