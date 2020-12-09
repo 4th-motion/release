@@ -20,14 +20,20 @@
   },
   "scripts": {
     "fresh": "rm -rf node_modules; yarn install",
-    "lint:js": "4th-eslint ./**/*.js --color --fix --quiet"
+    "lint:js": "4th-eslint ./**/*.js --color --fix --quiet",
+    "lint:js:staged": "git diff --diff-filter=ACMRT --cached --name-only --quiet './**/*.js' | xargs 4th-eslint",
+    "postinstall": "4th-git-hooks"
   },
   "devDependencies": {
-    "@4th-motion/eslint-config": "^1.0.4"
+    "@4th-motion/eslint-config": "^1.0.4",
+    "@4th-motion/git-hooks": "^1.0.2"
   },
   "eslintConfig": {
     "extends": [
       "@4th-motion/eslint-config"
     ]
+  },
+  "git": {
+    "pre-commit": "lint:js:staged"
   }
 }
