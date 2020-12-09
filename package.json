@@ -35,5 +35,8 @@
   },
   "git": {
     "pre-commit": "lint:js:staged"
+  },
+  "engines": {
+    "node": ">= 6"
   }
 }
