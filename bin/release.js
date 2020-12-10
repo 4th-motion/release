@@ -33,7 +33,7 @@ const createRelease = async () => {
     const commits = await getCommits(latestTag)
 
     // update changelog
-    updateChangelog(CHANGELOG_FILEPATH, newVersion, commits)
+    await updateChangelog(CHANGELOG_FILEPATH, newVersion, commits)
 
     // bump the version
     pkg.version = newVersion
