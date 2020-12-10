@@ -54,7 +54,7 @@ const createRelease = async () => {
     const releaseUrl = config.remote.origin.url.replace('.git', `/releases/new?tag=v${newVersion}`)
 
     log.success(`The release v${newVersion} was successfully created.`)
-    log.empty(`Describe the release on Github: ${releaseUrl}`)
+    log.empty(`Describe the release on GitHub: ${releaseUrl}`)
   })
 }
 
