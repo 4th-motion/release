@@ -3,6 +3,26 @@ All notable changes to this project will be documented in this file.
 
 <br>
 
+## v0.0.3
+
+**FEAT**
+
+* added release link ([8c8645e](https://github.com/4th-motion/release/commit/8c8645e))
+
+**FIX**
+
+* added await ([e935a11](https://github.com/4th-motion/release/commit/e935a11))
+* only show commits with
+* return complete tag instead of version ([3d8bcac](https://github.com/4th-motion/release/commit/3d8bcac))
+* take last hash if possible ([75fa2ba](https://github.com/4th-motion/release/commit/75fa2ba))
+
+**REFACTOR**
+
+* clean up ([50705a4](https://github.com/4th-motion/release/commit/50705a4)) 
+
+<br>
+
+
 ## v0.0.2
 
 **CHORE**
