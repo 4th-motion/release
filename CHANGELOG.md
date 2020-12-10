@@ -12,13 +12,12 @@ All notable changes to this project will be documented in this file.
 **FIX**
 
 * added await ([e935a11](https://github.com/4th-motion/release/commit/e935a11))
-* only show commits with
 * return complete tag instead of version ([3d8bcac](https://github.com/4th-motion/release/commit/3d8bcac))
 * take last hash if possible ([75fa2ba](https://github.com/4th-motion/release/commit/75fa2ba))
 
 **REFACTOR**
 
-* clean up ([50705a4](https://github.com/4th-motion/release/commit/50705a4)) 
+* clean up ([50705a4](https://github.com/4th-motion/release/commit/50705a4))
 
 <br>
 
@@ -55,7 +54,7 @@ All notable changes to this project will be documented in this file.
 
 * better logging ([4dcb329](https://github.com/4th-motion/release/commit/4dcb329))
 * changed function name ([680ab04](https://github.com/4th-motion/release/commit/680ab04))
-* clean up ([1329437](https://github.com/4th-motion/release/commit/1329437)) 
+* clean up ([1329437](https://github.com/4th-motion/release/commit/1329437))
 
 <br>
 
