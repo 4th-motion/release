@@ -41,8 +41,7 @@ const createRelease = async () => {
     log.info(`Bump version to v${newVersion}`)
 
     // commit and push files
-    exec(`git commit ${CHANGELOG_FILEPATH} -m "release: v${newVersion}" --no-verify`)
-    exec(`git commit package.json -m "bump: version up to v${newVersion}" --no-verify`)
+    exec(`git commit -am "release: v${newVersion}" --no-verify`)
     exec('git push origin --quiet', `Push changes to ${RELEASE_BRANCH} branch.`)
 
     // create new tag and push it aswell
