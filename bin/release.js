@@ -6,6 +6,7 @@ const exec = require('../lib/exec')
 const pkgContent = require('../lib/pkg')
 const getTags = require('../lib/tags')
 const getCommits = require('../lib/commits')
+const gitConfig = require('../lib/gitConfig')
 const updateChangelog = require('../lib/changelog')
 const question = require('../lib/question')
 
@@ -48,7 +49,12 @@ const createRelease = async () => {
     exec(`git tag v${newVersion}`)
     exec('git push --tags --quiet', 'Create new tag.')
 
+    // create the release link
+    const config = await gitConfig()
+    const releaseUrl = config.remote.origin.url.replace('.git', `/releases/new?tag=v${newVersion}`)
+
     log.success(`The release v${newVersion} was successfully created.`)
+    log.empty(`Describe the release on Github: ${releaseUrl}`)
   })
 }
 
