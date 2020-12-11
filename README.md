@@ -57,7 +57,7 @@ const CHANGELOG_FILEPATH = 'CHANGELOG.md'
 
 Copyright © 2020 by 4th motion GmbH. Released under the [MIT License][license].
 
-[screenshot]: https://assets.4thmotion.com/github/release/screenshot.jpg
+[screenshot]: https://assets.4thmotion.com/github/release/screenshot.png
 [version-image]: https://img.shields.io/github/package-json/v/4th-motion/release
 [license-image]: https://img.shields.io/github/license/4th-motion/release
 [git-hooks]: https://github.com/4th-motion/git-hooks
