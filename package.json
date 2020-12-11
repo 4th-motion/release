@@ -1,7 +1,7 @@
 {
   "name": "@4th-motion/release",
   "description": "Bump a new version and update your changelogs with a single command.",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "author": "Marco Koenen <mako@4thmotion.com>",
   "license": "MIT",
   "repository": {
@@ -20,24 +20,7 @@
   },
   "scripts": {
     "fresh": "rm -rf node_modules; yarn install",
-    "lint:js": "4th-eslint ./**/*.js --color --fix --quiet",
-    "lint:js:staged": "git diff --diff-filter=ACMRT --cached --name-only --quiet './**/*.js' | xargs 4th-eslint",
-    "postinstall": "4th-git-hooks"
-  },
-  "devDependencies": {
-    "@4th-motion/eslint-config": "^1.0.4",
-    "@4th-motion/git-hooks": "^1.0.2"
-  },
-  "eslintConfig": {
-    "extends": [
-      "@4th-motion/eslint-config"
-    ]
-  },
-  "git": {
-    "pre-commit": "lint:js:staged"
-  },
-  "engines": {
-    "node": ">= 6"
+    "lint:js": "4th-eslint ./**/*.js --color --fix --quiet"
   },
   "dependencies": {
     "args": "^5.0.1",
@@ -46,5 +29,16 @@
     "parse-git-config": "^3.0.0",
     "semver": "^7.3.4",
     "tagged-versions": "^1.3.0"
+  },
+  "devDependencies": {
+    "@4th-motion/eslint-config": "^1.0.4"
+  },
+  "eslintConfig": {
+    "extends": [
+      "@4th-motion/eslint-config"
+    ]
+  },
+  "engines": {
+    "node": ">= 6"
   }
 }
