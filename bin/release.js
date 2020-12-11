@@ -10,7 +10,7 @@ const gitConfig = require('../lib/gitConfig')
 const updateChangelog = require('../lib/changelog')
 const question = require('../lib/question')
 
-const RELEASE_BRANCH = 'develop'
+const RELEASE_BRANCH = 'master'
 const CHANGELOG_FILEPATH = 'CHANGELOG.md'
 
 const createRelease = async () => {
