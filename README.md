@@ -4,7 +4,7 @@
 ![Version][version-image]
 ![License][license-image]
 
-Say goodbye to handwritten changelogs - with this tool, a GitHub release is created and all changes since the last version are automatically recorded in the changelog file. You can have a look at how such a generated [changelog file](changelog) looks like.
+Say goodbye to handwritten changelogs - with this tool, a GitHub release is created and all changes since the last version are automatically recorded in the changelog file. You can have a look at how such a generated [changelog file][changelog] looks like.
 
 <br>
 
@@ -32,7 +32,7 @@ yarn release
 
 You will be asked which version you want to release. If you have entered a valid version, your changelog will be adjusted, a tag will be created and all changes will be pushed. When you use certain keywords for your commits (e.g. `fix:`, `feat:`, …) your commits will be sorted accordingly in the changelog.
 
-_Note: If you want to make sure your team adheres to specific commit rules, we recommend to use [@4th-motion/git-hooks](git-hooks). There you can define your rules and make sure that only schematically correct commits are pushed._
+_Note: If you want to make sure your team adheres to specific commit rules, we recommend to use [@4th-motion/git-hooks][git-hooks]. There you can define your rules and make sure that only schematically correct commits are pushed._
 
 <br>
 
