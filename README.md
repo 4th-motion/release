@@ -48,7 +48,7 @@ const CHANGELOG_FILEPATH = 'CHANGELOG.md'
 <br>
 
 ## Further documents
-- [Changelog](/docs/changelog.md)
+- [Changelog][changelog]
 - [Contributing](/docs/contributing.md)
 - [Pull request](/docs/pull_request.md)
 - [Code of conduct](/docs/code_of_conduct.md)
