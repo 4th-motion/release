@@ -3,6 +3,23 @@ All notable changes to this project will be documented in this file.
 
 <br>
 
+## v1.0.0
+
+**FIX**
+
+* better error log when given version is wrong ([6d0378b](https://github.com/4th-motion/release/commit/6d0378b))
+* changed release branch name ([fc0eb8c](https://github.com/4th-motion/release/commit/fc0eb8c))
+* do not log empty messages to console ([0de1dad](https://github.com/4th-motion/release/commit/0de1dad))
+* do not remove commits with string 'commits' ([86a7738](https://github.com/4th-motion/release/commit/86a7738))
+
+**REFACTOR**
+
+* comment fixes ([fde8677](https://github.com/4th-motion/release/commit/fde8677))
+* removed commit with empty hash ([cd95a41](https://github.com/4th-motion/release/commit/cd95a41)) 
+
+<br>
+
+
 ## v0.0.3
 
 **FEAT**
@@ -20,7 +37,6 @@ All notable changes to this project will be documented in this file.
 * clean up ([50705a4](https://github.com/4th-motion/release/commit/50705a4))
 
 <br>
-
 
 ## v0.0.2
 
