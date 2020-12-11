@@ -10,6 +10,8 @@ Say goodbye to handwritten changelogs - with this tool, a GitHub release is crea
 
 ![Terminal][screenshot]
 
+<br>
+
 ## Installation
 
 Add this package as a devDependency to your project:
