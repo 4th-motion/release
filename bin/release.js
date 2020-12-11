@@ -29,14 +29,13 @@ const createRelease = async () => {
   // to which version should be bumped?
   log.info(`Current version: ${version}`)
 
-  question('          Type your new version:\n', async (newVersion) => {
-    // get all commits since the last tag and format the output
+  question('Type your new version:', 'Your new version is invalid. Try again.', async (newVersion) => {
     const commits = await getCommits(latestTag)
 
     // update changelog
     await updateChangelog(CHANGELOG_FILEPATH, newVersion, commits)
 
-    // bump the version
+    // bump the version (we already verified that the package.json exists)
     pkg.version = newVersion
     fs.writeFileSync('package.json', JSON.stringify(pkg, null, '  '), 'utf-8')
     log.info(`Bump version to v${newVersion}`)
