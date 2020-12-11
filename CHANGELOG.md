@@ -3,6 +3,23 @@ All notable changes to this project will be documented in this file.
 
 <br>
 
+## v1.0.1
+
+**CHORE**
+
+* removed @4th-motion/git-hooks ([03870ef](https://github.com/4th-motion/release/commit/03870ef))
+
+**DOCS**
+
+* added line break ([a73eed7](https://github.com/4th-motion/release/commit/a73eed7))
+* change screenshot path ([7c211c4](https://github.com/4th-motion/release/commit/7c211c4))
+* fixed broken links ([5000064](https://github.com/4th-motion/release/commit/5000064))
+* fixed changelog link in further documents ([5f450af](https://github.com/4th-motion/release/commit/5f450af))
+* improved readme ([48101fc](https://github.com/4th-motion/release/commit/48101fc)) 
+
+<br>
+
+
 ## v1.0.0
 
 **FIX**
@@ -18,7 +35,6 @@ All notable changes to this project will be documented in this file.
 * removed commit with empty hash ([cd95a41](https://github.com/4th-motion/release/commit/cd95a41)) 
 
 <br>
-
 
 ## v0.0.3
 
