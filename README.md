@@ -1,5 +1,5 @@
 # @4th-motion/release
-> Bump a new version and update your changelogs with a single command.
+> Bump a new version and update your changelog with a single command.
 
 ![Version][version-image]
 ![License][license-image]
