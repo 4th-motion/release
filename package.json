@@ -1,7 +1,7 @@
 {
   "name": "@4th-motion/release",
   "description": "Bump a new version and update your changelogs with a single command.",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "author": "Marco Koenen <mako@4thmotion.com>",
   "license": "MIT",
   "repository": {

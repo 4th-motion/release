@@ -3,6 +3,24 @@ All notable changes to this project will be documented in this file.
 
 <br>
 
+## v1.0.2
+
+**DOCS**
+
+* added flags to 'customize to your needs' ([a650d7c](https://github.com/4th-motion/release/commit/a650d7c))
+* fixed typo ([c54d8c1](https://github.com/4th-motion/release/commit/c54d8c1))
+
+**FEAT**
+
+* added 'branch' and 'changelog' flag ([3b9455d](https://github.com/4th-motion/release/commit/3b9455d))
+
+**FIX**
+
+* better error handling for execSync ([7c491d4](https://github.com/4th-motion/release/commit/7c491d4)) 
+
+<br>
+
+
 ## v1.0.1
 
 **CHORE**
@@ -18,7 +36,6 @@ All notable changes to this project will be documented in this file.
 * improved readme ([48101fc](https://github.com/4th-motion/release/commit/48101fc)) 
 
 <br>
-
 
 ## v1.0.0
 
