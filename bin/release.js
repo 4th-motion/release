@@ -1,5 +1,6 @@
 #!/usr/bin/env node
 const fs = require('fs')
+const args = require('args')
 
 const log = require('../lib/log')
 const exec = require('../lib/exec')
@@ -10,8 +11,14 @@ const gitConfig = require('../lib/gitConfig')
 const updateChangelog = require('../lib/changelog')
 const question = require('../lib/question')
 
-const RELEASE_BRANCH = 'master'
-const CHANGELOG_FILEPATH = 'CHANGELOG.md'
+args
+  .option('branch', 'Change the release branch (default is master)')
+  .option('changelog', 'Path to the changelog file (default is /CHANGELOG.md)')
+
+// overwrite default settings
+const flags = args.parse(process.argv)
+const RELEASE_BRANCH = flags.branch || 'master'
+const CHANGELOG_FILEPATH = flags.changelog || 'CHANGELOG.md'
 
 const createRelease = async () => {
   log.empty('Starting the release process…')
