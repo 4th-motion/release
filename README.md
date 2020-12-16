@@ -38,11 +38,11 @@ _Note: If you want to make sure your team adheres to specific commit rules, we r
 
 ## Customize to your needs
 
-This script takes the master branch as default. And the changelog file must be in the root folder of your project. If you want to change these settings, you can do it [here](https://github.com/4th-motion/release/blob/eda97f527d57b02e67da18936f2368a7bd9a7071/bin/release.js#L13-L14).
+This script takes the master branch as default. And the changelog file must be in the root folder of your project. If you want to change these settings, you can pass some flags to the script.
 
-```javascript
-const RELEASE_BRANCH = 'master'
-const CHANGELOG_FILEPATH = 'CHANGELOG.md'
+```
+yarn release --branch release
+yarn release --changelog docs/changelog.md
 ```
 
 <br>
