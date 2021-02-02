@@ -36,7 +36,7 @@ const createRelease = async () => {
   // to which version should be bumped?
   log.info(`Current version: ${version}`)
 
-  question('Type your new version:', 'Your new version is invalid. Try again.', async (newVersion) => {
+  question.version('Type your new version:', 'Your new version is invalid. Try again.', async (newVersion) => {
     const commits = await getCommits(latestTag)
 
     // update changelog
@@ -48,19 +48,21 @@ const createRelease = async () => {
     log.info(`Bump version to v${newVersion}`)
 
     // commit and push files
-    exec(`git commit -am "release: v${newVersion}" --no-verify`)
-    exec('git push origin --quiet', `Push changes to ${RELEASE_BRANCH} branch.`)
+    question.commit('Should the changes be committed directly? (yes/no)', async (answer) => {
+      if (answer === 'yes') {
+        exec(`git commit -am "release: v${newVersion}" --no-verify`)
+        exec('git push origin --quiet', `Push changes to ${RELEASE_BRANCH} branch.`)
+        exec(`git tag v${newVersion}`)
+        exec('git push --tags --quiet', 'Create new tag.')
+      }
 
-    // create new tag and push it aswell
-    exec(`git tag v${newVersion}`)
-    exec('git push --tags --quiet', 'Create new tag.')
+      // create the release link
+      const config = await gitConfig()
+      const releaseUrl = config.remote.origin.url.replace('.git', `/releases/new?tag=v${newVersion}`)
 
-    // create the release link
-    const config = await gitConfig()
-    const releaseUrl = config.remote.origin.url.replace('.git', `/releases/new?tag=v${newVersion}`)
-
-    log.success(`The release v${newVersion} was successfully created.`)
-    log.empty(`Describe the release on GitHub: ${releaseUrl}`)
+      log.success(`The release v${newVersion} was successfully created.`)
+      log.empty(`Describe the release on GitHub: ${releaseUrl}`)
+    })
   })
 }
 
