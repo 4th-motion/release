@@ -19,6 +19,7 @@
     "release": "./bin/release.js"
   },
   "scripts": {
+    "release": "./bin/release.js",
     "fresh": "rm -rf node_modules; yarn install",
     "lint:js": "4th-eslint ./**/*.js --color --fix --quiet"
   },
