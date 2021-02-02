@@ -3,6 +3,16 @@ All notable changes to this project will be documented in this file.
 
 <br>
 
+## v1.0.3
+
+**FEAT**
+
+* added release task to package ([0fe0c6b](https://github.com/4th-motion/release/commit/0fe0c6b))
+* ask if the changes should be committed directly ([f5033e2](https://github.com/4th-motion/release/commit/f5033e2)) 
+
+<br>
+
+
 ## v1.0.2
 
 **DOCS**
@@ -19,7 +29,6 @@ All notable changes to this project will be documented in this file.
 * better error handling for execSync ([7c491d4](https://github.com/4th-motion/release/commit/7c491d4)) 
 
 <br>
-
 
 ## v1.0.1
 
